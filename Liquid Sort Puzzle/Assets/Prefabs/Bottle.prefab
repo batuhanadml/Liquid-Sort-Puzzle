@@ -50,8 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f6fe6719ab67d4cb9187034683fef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationDuration: 0.5
-  moveDuration: 0.4
+  rotationDuration: 0.4
+  moveDuration: 0.3
   scaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923d51fe3f8f7574fa9ff4064ef19f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillSpeed: 0.8
+  fillSpeed: 1
   liquids:
   - data: {fileID: 11400000, guid: 627b768e632d92e45ba05920d443a6ec, type: 2}
     amount: 0.4

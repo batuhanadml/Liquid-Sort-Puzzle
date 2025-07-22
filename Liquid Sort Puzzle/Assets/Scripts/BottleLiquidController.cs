@@ -82,7 +82,7 @@ public class BottleLiquidController : MonoBehaviour
         liquids[containerIndex].amount += changeValue;
 
         // Clear top container if necessary
-        if (Mathf.Approximately(liquids[containerIndex].amount, 0))
+        if (liquids[containerIndex].amount < .001f)
         {
             liquids[containerIndex].Clear();
 
@@ -108,7 +108,7 @@ public class BottleLiquidController : MonoBehaviour
 
     public bool IsCompleted()
     {
-        return Mathf.Approximately(liquids[0].amount, 1);
+        return liquids[0].amount >= .99f;
     }
 
     public LiquidContainer GetTopContainer() => liquids[GetTopContainerIndex()];

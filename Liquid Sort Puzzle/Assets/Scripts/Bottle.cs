@@ -99,7 +99,7 @@ public class Bottle : MonoBehaviour
         if (isCompleted = liquidController.IsCompleted())
             completedObject.SetActive(true);
     }
-    public bool IsCompleted() => isCompleted || Mathf.Approximately(GetAvailableFillAmount(), 1); //Empty or Completed
+    public bool IsCompleted() => isCompleted || GetAvailableFillAmount() > .999f; //Empty or Completed
 
     public LiquidContainer GetTopContainer() => liquidController.GetTopContainer();
     public float GetAvailableFillAmount() => liquidController.GetAvailableFillAmount();
